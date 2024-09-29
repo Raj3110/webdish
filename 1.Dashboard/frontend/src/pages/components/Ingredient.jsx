@@ -209,8 +209,8 @@ const Ingredient = ({formData, setFormData, portion}) => {
                 <div className="w-full">
                     {portion === 1 || !isQuantityFilledForPortion(portion) ? (
                         <>
-                            <div className="flex flex-col lg:flex-row gap-0 lg:gap-4">
-                                <div className="w-full lg:w-1/2 pt-4 lg:pt-0">
+                            <div className="flex flex-col lg:flex-row gap-0 lg:gap-4 md:ml-[25%]">
+                                <div className="w-full lg:w-2/3 pt-4 lg:pt-0">
                                     <label className="custom-text block">
                                         Name <span className="text-rose-600">*</span>
                                     </label>
@@ -224,37 +224,37 @@ const Ingredient = ({formData, setFormData, portion}) => {
               outline-none`}
                                     />
                                 </div>
-                                <div>
-                                    <select
-                                        className={`custom-input custom-text ${portion !== 1 ? "cursor-not-allowed" : "cursor-pointer"}
-                px-2 mt-2 py-[6px] mb-[3px] text-lg w-full border border-black rounded-md focus:border-orange-400
-                placeholder:italic outline-none`}>
-                                        <option value="">Select Unit</option>
-                                        <option value="gram">gram</option>
-                                        <option value="mL">mL</option>
-                                        <option value="teaspoon">teaspoon</option>
-                                        <option value="tablespoon">tablespoon</option>
-                                        <option value="whole">piece</option>
-                                    </select>
-                                </div>
+                {/*                <div>*/}
+                {/*                    <select*/}
+                {/*                        className={`custom-input custom-text ${portion !== 1 ? "cursor-not-allowed" : "cursor-pointer"}*/}
+                {/*px-2 mt-2 py-[6px] mb-[3px] text-lg w-full border border-black rounded-md focus:border-orange-400*/}
+                {/*placeholder:italic outline-none`}>*/}
+                {/*                        <option value="">Select Unit</option>*/}
+                {/*                        <option value="gram">gram</option>*/}
+                {/*                        <option value="mL">mL</option>*/}
+                {/*                        <option value="teaspoon">teaspoon</option>*/}
+                {/*                        <option value="tablespoon">tablespoon</option>*/}
+                {/*                        <option value="whole">piece</option>*/}
+                {/*                    </select>*/}
+                {/*                </div>*/}
                             </div>
-                            <div className="flex w-full items-center justify-center">
-                                {portion === 1 ? (
-                                    <button onClick={handleIngredientSubmit} type="button" className={`text-white border bg-zinc-700 p-2 px-6
-              my-4 rounded-xl hover:bg-zinc-950`}>
-                                        Add Ingredient
-                                    </button>
-                                ) : portion !== 1 && !isQuantityDisabled && (
-                                    <button onClick={handleIngredientSubmit} type="button" className={`text-white border bg-zinc-700 p-2 px-6
-              my-4 rounded-xl hover:bg-zinc-950`}>
-                                        Add Quantity
-                                    </button>
-                                )}
-                            </div>
+              {/*              <div className="flex w-full items-center justify-center">*/}
+              {/*                  {portion === 1 ? (*/}
+              {/*                      <button onClick={handleIngredientSubmit} type="button" className={`text-white border bg-zinc-700 p-2 px-6*/}
+              {/*my-4 rounded-xl hover:bg-zinc-950`}>*/}
+              {/*                          Add Ingredient*/}
+              {/*                      </button>*/}
+              {/*                  ) : portion !== 1 && !isQuantityDisabled && (*/}
+              {/*                      <button onClick={handleIngredientSubmit} type="button" className={`text-white border bg-zinc-700 p-2 px-6*/}
+              {/*my-4 rounded-xl hover:bg-zinc-950`}>*/}
+              {/*                          Add Quantity*/}
+              {/*                      </button>*/}
+              {/*                  )}*/}
+              {/*              </div>*/}
                         </>
                     ) : null}
 
-                    <div className="w-full lg:w-1/2 pt-4 lg:pt-0">
+                    <div className="w-full lg:w-1/2 pt-4 lg:pt-0 md:ml-[25%]">
                         <label className="custom-text block">
                             Quantity <span className="text-rose-600">*</span>
                         </label>
@@ -278,7 +278,7 @@ const Ingredient = ({formData, setFormData, portion}) => {
           focus:border-orange-400 outline-none`}
                         />
                     </div>
-                    <div className="w-full lg:w-1/2 pt-4 lg:pt-0">
+                    <div className="w-full lg:w-1/2 pt-4 lg:pt-0 md:ml-[25%]">
                         <label className="custom-text block">
                             Unit <span className="text-rose-600">*</span>
                         </label>
@@ -289,6 +289,7 @@ const Ingredient = ({formData, setFormData, portion}) => {
                                 } px-2 mt-2 py-[7px] text-lg w-full border border-black rounded-md focus:border-orange-400
             placeholder:italic outline-none`}
                         >
+                            <option value="">Select Unit</option>
                             <option value="gram">gram</option>
                             <option value="mL">mL</option>
                             <option value="teaspoon">teaspoon</option>
