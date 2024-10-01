@@ -54,7 +54,7 @@ const DashboardForm = ({ setTab, form, setForm }) => {
 
   const debouncedCheckDishExists = debounce(async (dishName) => {
     try {
-      const response = await axios.get(`http://127.0.0.1:5000/chef/checkDishExists?name=${dishName.toLowerCase()}`);
+      const response = await axios.get(`https://old-dashboard-backend.onrender.com/chef/checkDishExists?name=${dishName.toLowerCase()}`);
       if (response.data.exists) {
         setError('Dish already exists');
       } else {
@@ -192,7 +192,7 @@ const DashboardForm = ({ setTab, form, setForm }) => {
       if (form.name.trim()) {
         try {
           setIsLoading(true);
-          const response = await axios.get(`http://127.0.0.1:5000/chef/checkDishExists?name=${form.name.trim().toLowerCase()}`);
+          const response = await axios.get(`https://old-dashboard-backend.onrender.com/chef/checkDishExists?name=${form.name.trim().toLowerCase()}`);
           if (response.data.exists) {
             setError('Dish already exists');
           } else {
