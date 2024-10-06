@@ -7,9 +7,9 @@ const KeyFeaturesData = [
       "https://media.istockphoto.com/id/1306548786/photo/woman-speaking-to-a-smart-speaker-during-a-breakfast-at-home.jpg?s=612x612&w=0&k=20&c=HHksW0lEIfbEK5h-nrOZZaRcxhZL6PNW80vsFgp7rOE="
   },
   {
-    heading: "Comprehensive Food Intake Log:",
+    heading: "Comprehensive Food Intake Log",
     description:
-      "Keep track of your meals effortlessly. Log your food intake, including snacks and beverages, to give our system a comprehensive view of your dietary habits",
+      "Keep track of your meals effortlessly. Log your food intake, including snacks and beverages, to give our system a comprehensive view of your dietary habits Inform us about any dietary restrictions",
     imageUrl: "dietary_restrictions_image_url.jpg"
   },
   {

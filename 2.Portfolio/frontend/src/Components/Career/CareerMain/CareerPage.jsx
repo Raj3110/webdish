@@ -8,7 +8,7 @@ function CareerPage() {
         <Fade>
           <img
             className="w-full h-auto sm:w-1/2 lg:w-1/2 object-cover rounded-xl"
-            src="https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/be291b3d-cbe2-4bb0-a3b2-336f319e8105/Default_A_detailed_highly_realistic_awardwinning_animestyle_di_3.jpg"
+            src="https://cdn.leonardo.ai/users/73e78dc5-77d2-47e7-afe6-84668d032570/generations/1bfdc948-09ce-409d-9ca1-c7bc4e78c16f/Leonardo_Phoenix_Create_a_highdetail_scene_of_two_people_engag_1.jpg"
             alt="interview img"
           />
         </Fade>

@@ -1,6 +1,6 @@
 import React from "react";
 import KeyFeaturesData from "./Data/KeyFeaturesData";
-// import ChefImg from "./Data/images/Img10.jpeg";
+import ChefImg from "./Data/images/Img10.jpeg";
 
 const NutritionManager = () => {
   return (
@@ -12,7 +12,7 @@ const NutritionManager = () => {
       </div>
       <div className="flex justify-center items-center">
         <img
-          src="https://cdn.leonardo.ai/users/73e78dc5-77d2-47e7-afe6-84668d032570/generations/9d4a1eeb-76c9-4212-b024-b0cfeba90648/Default_A_middleaged_male_chef_wearing_a_crisp_white_chefs_uni_3.jpg"
+          src={ChefImg}
           className="w-auto h-52 md:h-screen rounded-lg"
           alt="chefIMG"
         />

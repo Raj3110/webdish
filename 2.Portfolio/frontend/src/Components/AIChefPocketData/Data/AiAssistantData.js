@@ -6,45 +6,45 @@
 // import Img6 from "./images/Img6.jpg";
 const AiAssistantData = [
   {
-    imageUrl: "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/1181df24-5486-42f2-a529-f24671f9f4e6/Default_A_lavish_visually_stunning_animestyle_illustration_sho_0.jpg",
+    imageUrl: "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/ba518370-633d-4da1-bb7d-b1be52578ace/Leonardo_Kino_XL_Create_a_highquality_realistic_image_that_cap_1.jpg",
     heading: "Discover a World of Culinary Delights",
     description:
       "Upon entering the platform, you'll be greeted with a curated list of recommended dishes, tailored to suit various tastes and preferences. Whether you're in the mood for a luxurious meal, a healthy option, or a quick and easy dish, our AI Assistant has you covered.",
   },
   {
     imageUrl:
-      "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/ab9c2d3b-9c5d-45cf-9444-c0f95d73dfb3/Default_A_dynamic_highquality_animestyle_illustration_depictin_2.jpg",
+      "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/cabe2dec-0b2c-47ed-8f06-f8665242d5c4/Leonardo_Kino_XL_Create_a_highquality_realistic_image_that_rep_0.jpg",
     heading: "Tailored Cooking Experience",
     description:
       "Choose when you want to cook – be it breakfast, lunch, or dinner. Explore additional options such as luxury dishes, healthy recipes, and quick fixes, allowing you to discover a diverse range of culinary delights.",
   },
   {
-    imageUrl: "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/69a923fa-a0a6-4f3f-9bf5-e96d0987aefd/Default_A_detailed_cinematic_animestyle_illustration_showcasin_2.jpg",
+    imageUrl: "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/c8ec85f2-1743-484b-b53a-0925ff794793/Leonardo_Kino_XL_Create_a_highquality_realistic_image_of_a_cla_0.jpg",
     heading: "Effortless Dish Selection",
     description:
       "Select a dish that piques your interest or simply search for a particular recipe. Our extensive database ensures that you find the perfect dish for any occasion.",
   },
   {
-    imageUrl: "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/61d7d12e-4128-4aab-91ad-e5d271b9347a/Default_A_detailed_highquality_animestyle_illustration_of_a_yo_3.jpg",
+    imageUrl: "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/d7a856a5-0b05-4c99-9c42-40ac40487865/Leonardo_Kino_XL_Create_a_highquality_realistic_image_of_a_ric_2.jpg",
     heading: "Detailed Dish Information",
     description:
       "Once you've chosen a dish, delve into its detailed description. Explore main ingredients, customizable options, caloric content, estimated preparation time, and required kitchen equipment.",
   },
   {
     imageUrl:
-      "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/cc65e417-4d8f-44b8-b900-bcf9ffc8f617/Default_A_highly_detailed_cinematic_animestyle_illustration_sh_2.jpg",
+      "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/a04dadcb-c4a3-47be-a72c-4119b8cf8eb9/Leonardo_Kino_XL_Create_a_highquality_realistic_image_of_a_vib_1.jpg",
     heading: "Personalization at Your Fingertips",
     description:
       "Customize your chosen dish based on your preferences. Adjust the ingredients, quantity, spice level, and serving size to make it perfect for you and your loved ones.",
   },
   {
-    imageUrl: "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/e1bc497d-017f-4d74-bdd6-d82b6f63dd5a/Default_A_cinematic_highquality_animestyle_illustration_depict_0.jpg",
+    imageUrl: "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/a2dba3f1-0e3d-43b6-b522-bf39a752b98b/Leonardo_Kino_XL_Create_a_highquality_realistic_image_that_ill_0.jpg",
     heading: "Step-by-Step Guidance",
     description:
       "Follow the recipe effortlessly with our step by step guidance. Each step is communicated through text, audio, and video, providing a comprehensive cooking tutorial. If a step requires a specific amount of time, a countdown timer ensures you stay on track.",
   },
   {
-    imageUrl: "https://cdn.leonardo.ai/users/b7bcbe82-59ff-4ea9-9d18-f22e92cdf03e/generations/53c9de59-7ed9-45d5-9745-f068135ba312/Default_A_highly_detailed_cinematic_animestyle_illustration_sh_0.jpg",
+    imageUrl: "https://cdn.leonardo.ai/users/7006afc1-630b-4508-9381-d5e62d58dc64/generations/469dde74-8371-4175-ae2f-c77e523cf225/Leonardo_Kino_XL_Create_a_highquality_realistic_image_that_vis_2.jpg",
     heading: "Seamless Navigation",
     description:
       "Navigate back and forth through the recipe with ease. Our user-friendly interface allows you to revisit previous steps or skip ahead, ensuring you have full control over your cooking experience.",
