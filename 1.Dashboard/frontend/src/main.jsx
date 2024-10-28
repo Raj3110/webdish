@@ -9,9 +9,7 @@ import { TranslationProvider } from './context/TranslationContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <AuthContextProvider>
-        <TranslationProvider>
-            <App />
-        </TranslationProvider>
+        <App />
         <ToastContainer />
     </AuthContextProvider>
 )
