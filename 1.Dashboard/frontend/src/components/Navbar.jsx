@@ -5,14 +5,10 @@ import {useAuthContext} from "../hooks/useAuthContext";
 import {toast} from "react-toastify";
 import {MdDarkMode, MdLightMode} from "react-icons/md";
 import MobileNav from "./MobileNav";
-import { useTranslation } from "../context/TranslationContext";
-import { translateAllText } from '../components/Translator'; 
 
 const Navbar = ({theme, setTheme}) => {
   const {logout} = useLogout();
   const {user} = useAuthContext();
-  const { targetLang, changeLanguage } = useTranslation();
-  const location = useLocation();
 
   const handleLogout = () => {
     logout();
@@ -36,16 +32,6 @@ const Navbar = ({theme, setTheme}) => {
       localStorage.setItem('theme', 'light');
     }
   }
-
-  const handleTranslate = async () => {
-    const elements = Array.from(document.body.querySelectorAll('*')).filter(element => element.childNodes.length > 0);
-    await translateAllText(elements, targetLang); 
-  };
-
-
-  useEffect(() => {
-    handleTranslate();
-  }, [targetLang, location]); 
 
 
   return (
@@ -107,7 +93,7 @@ const Navbar = ({theme, setTheme}) => {
         <div className="hidden xl:flex xl:items-center h-full">
           {!user && (
               <div>
-                <button className="mr-4">
+                <button className="  ">
                   <Link
                       className="text-lg  font-primary px-4 h-full  transition-all duration-300 border border-yellow-800 rounded-xl hover:bg-[#ff910032]  py-2 "
                       to="/login"
@@ -117,26 +103,6 @@ const Navbar = ({theme, setTheme}) => {
                 </button>
               </div>
           )}
-
-          <div className="">
-          <select
-            value={targetLang}
-            onClick={handleTranslate}
-            onChange={(e) => changeLanguage(e.target.value)}
-            className="px-2 py-1.5 border border-yellow-800 rounded-md bg-white text-black no-translate"
-          >
-            <option value="en">English</option>
-            <option value="hi">Hindi</option>
-            <option value="ta">Tamil</option>
-            <option value="te">Telugu</option>
-            <option value="ml">Malayalam</option>
-            <option value="kn">Kannada</option>
-            <option value="mr">Marathi</option>
-            <option value="bn">Bengali</option>
-            <option value="gu">Gujarathi</option>
-            <option value="as">Assamese</option>
-          </select>
-        </div>
 
 
           {user && (
