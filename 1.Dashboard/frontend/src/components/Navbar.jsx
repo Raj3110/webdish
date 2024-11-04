@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, NavLink, useLocation} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {useLogout} from "../hooks/useLogout";
 import {useAuthContext} from "../hooks/useAuthContext";
 import {toast} from "react-toastify";
