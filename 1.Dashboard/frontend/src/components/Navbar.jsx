@@ -107,7 +107,7 @@ const Navbar = ({theme, setTheme}) => {
         <div className="hidden xl:flex xl:items-center h-full">
           {!user && (
               <div className="mr-4">
-                <button className="  ">
+                <button className=" ">
                   <Link
                       className="text-lg  font-primary px-4 h-full  transition-all duration-300 border border-yellow-800 rounded-xl hover:bg-[#ff910032]  py-2 mx-2"
                       to="/login"
