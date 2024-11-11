@@ -64,19 +64,28 @@ export default function NavBarHeader(props) {
     setSelectedLanguage(countryFlag);
     setLanguageDropdownOpen(false);
   };
-  const [selectedIndianLanguage, setSelectedIndianLanguage] = useState("ENG");
+  const [selectedIndianLanguage, setSelectedIndianLanguage] = useState(sessionStorage.getItem("lang")?sessionStorage.getItem("lang"):"EN");
   const [indianDropdownOpen, setIndianDropdownOpen] = useState(false);
 
   const handleIndianLanguageSelect = async(languageCode) => {
     setSelectedIndianLanguage(languageCode);
     setIndianDropdownOpen(false);
     const elements = Array.from(document.body.querySelectorAll('*')).filter(element => element.childNodes.length > 0);
+    sessionStorage.setItem("lang", languageCode)
     await translateAllText(elements, languageCode);
   };
 
   const toggleIndianDropdown = () => {
     setIndianDropdownOpen(!indianDropdownOpen);
   };
+
+  useEffect(()=>{
+    setTimeout(() => {
+      if(sessionStorage.getItem("lang")){
+        handleIndianLanguageSelect(sessionStorage.getItem("lang"))
+      }
+    }, 1500);
+  }, [])
 
   const [showMenu, setShowMenu] = useState(false);
 
