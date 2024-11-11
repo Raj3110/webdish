@@ -7,6 +7,10 @@ const getTranslationFromLocalStorage = (key) => {
     return localStorage.getItem(key);
 };
 
+const normalizeText = (text) => {
+    return text.trim(); 
+};
+
 // Function to translate individual text and store in local storage
 export const translateText = async (text, targetLang, uniqueKey) => {
     const cachedTranslation = getTranslationFromLocalStorage(uniqueKey);
@@ -37,18 +41,16 @@ export const translateText = async (text, targetLang, uniqueKey) => {
 
 export const translateAllText = async (elements, targetLang) => {
     for (const element of elements) {
+        if (!(element instanceof HTMLElement)) continue;
         if (element.closest('.no-translate')) continue; 
-
         const childNodes = Array.from(element.childNodes);
         for (const node of childNodes) {
             if (node.nodeType === Node.TEXT_NODE) {
-                if (!node.parentNode.hasAttribute('data-original-text')) {
-                    node.parentNode.setAttribute('data-original-text', node.textContent.trim());
-                }
-
-                const originalText = node.parentNode.getAttribute('data-original-text');
+                const originalText = node.textContent.trim();
+                if (!originalText) continue;
+                
                 if (originalText) {
-                    const uniqueKey = `${targetLang}-${originalText}`; 
+                    const uniqueKey = `${targetLang}-${normalizeText(originalText)}`; 
                     try {
                         const translatedText = await translateText(originalText, targetLang, uniqueKey);
                         node.textContent = translatedText; 
